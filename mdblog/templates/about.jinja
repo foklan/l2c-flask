@@ -1,30 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title> Welcome to Markdown blog </title>
-        <link rel="stylesheet" type="text/css" href={{ url_for("static", filename="css/main.css")}}>
-    </head>
+{% extends "_main.jinja" %}
 
-    <body>
-        <header>
-            <h1> Foklan Python</h1>
-        </header>
+{% block title %} Welcome to Markdown blog {% endblock %}
 
-        <nav>
-            <ul class="nav">
-                <li> <a href="#">About</a></li>
-                <li> <a href="#">Articles</a></li>
-                <li> <a href="#">Admin</a></li>
-            </ul>
-        </nav>
-    </body>
-    <main>
-        Yes, that's me lol.
-    </main>
-
-    <footer>
-        <p>
-            (c) 2023 Foklan Python
-        </p>
-    </footer>
-</html>
+{% block main %}
+Yes, that's me lol.
+{% endblock %}
